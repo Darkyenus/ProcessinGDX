@@ -39,8 +39,6 @@ TaskKey[Unit]("packResources") := {
   ResourcePacker.resourcePack(new PackingOperation(file("./resources"), file("./src/main/resources")))
 }
 
-mainClass in assembly := Some("com.darkyen.backyardrockets.BackyardRockets")
-
 TaskKey[Unit]("dist") := {
   val resultZip = target.value / (name.value+"-"+version.value+".zip")
   val basePrefix = "BackyardRockets/"

@@ -66,7 +66,7 @@ object ChaoticPainter : Applet() {
 
 
     override fun setup() {
-        template = Pixmap(Gdx.files.local("M24.jpg"))
+        template = Pixmap(Gdx.files.local("drift.jpg"))
         nextPoint = nextPoint(width/2f, height/2f)
 
         val firstPoint = nextPoint(nextPoint.x, nextPoint.y)
